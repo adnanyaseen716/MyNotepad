@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvComplaint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Enter your complaint!"
+        android:textSize="20sp"
+        android:textColor="@color/notepadColor"
+        android:textStyle="bold"
+        android:layout_marginStart="70dp"
+        android:paddingRight="50dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:paddingStart="7dp"
+        android:id="@+id/etEnterComplaint"
+        android:layout_width="290dp"
+        android:layout_marginStart="40dp"
+        android:layout_height="45dp"
+        android:background="@drawable/notes_outline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvComplaint"
+        app:layout_constraintEnd_toEndOf="@id/tvComplaint"
+
+        android:layout_marginTop="15dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSubmitNo"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="@id/etEnterComplaint"
+        app:layout_constraintEnd_toEndOf="@id/etEnterComplaint"
+        app:layout_constraintTop_toBottomOf="@id/etEnterComplaint"
+        android:layout_marginTop="20dp"
+        android:text="Submit"
+        android:backgroundTint="@color/notepadColor"
+        android:textColor="@color/white"
+        />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/btnSubmitNo"
+        app:layout_constraintEnd_toEndOf="@id/btnSubmitNo"
+        app:layout_constraintTop_toBottomOf="@id/btnSubmitNo"
+        android:layout_marginTop="30dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

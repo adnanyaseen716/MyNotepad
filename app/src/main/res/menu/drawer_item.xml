@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:title="Categories">
+<menu >
+
+    <group android:id="@+id/group1">
+
+        <item
+            android:id="@+id/navAllNotes"
+            android:title="All Notes"
+            android:icon="@drawable/allnotes100"
+
+            />
+
+        <item
+            android:id="@+id/navFavourite"
+            android:title="Favourites"
+            android:icon="@drawable/star100"
+            />
+
+        <item
+            android:id="@+id/navRecyclebin"
+            android:title="RecycleBin"
+            android:icon="@drawable/delete100"
+            />
+
+
+    </group>
+
+
+</menu>
+</item>
+
+    <item android:title="Generals">
+        <menu>
+
+
+    <group android:id="@+id/group2">
+
+        <item
+            android:id="@+id/navFeedback"
+            android:title="Help and Feedback"
+            android:icon="@drawable/feedback"
+
+            />
+        <item
+            android:id="@+id/navShare"
+            android:title="Share Us"
+            android:icon="@drawable/share2"
+            />
+
+
+        <item
+            android:id="@+id/navExit"
+            android:title="Exit"
+            android:icon="@drawable/exit_eighty"
+            />
+
+    </group>
+
+        </menu>
+
+    </item>
+
+
+</menu>

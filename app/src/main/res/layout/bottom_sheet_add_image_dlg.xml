@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dlg_background"
+    android:orientation="vertical"
+
+    android:layout_height="270dp">
+
+    <com.google.android.material.divider.MaterialDivider
+        android:background="@drawable/divider_bg"
+        android:layout_marginTop="2dp"
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/dividerColor"
+        app:dividerColor="@color/dividerColor"
+
+        app:dividerInsetEnd="20dp"
+        app:dividerInsetStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tvCrossCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:drawableStartCompat="@drawable/cross"
+        android:drawableTint="@color/black"
+        android:layout_marginTop="2dp"
+
+        />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/tvAddCameraImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableStart="@drawable/add_photo"
+        android:text="Camera"
+        android:drawablePadding="15dp"
+        android:textSize="22sp"
+        android:textColor="@color/notepadColor"
+        android:textStyle="bold"
+        app:drawableTint="@color/notepadColor"
+
+        android:layout_marginEnd="10dp"
+        />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/tvAddGalleryImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/addgallery"
+        android:text="Gallery"
+        android:drawablePadding="15dp"
+        android:textSize="22sp"
+        android:layout_gravity="center"
+        android:textColor="@color/notepadColor"
+        android:textStyle="bold"
+        app:drawableTint="@color/notepadColor"
+
+        android:layout_marginEnd="10dp"
+        />
+
+
+</LinearLayout>

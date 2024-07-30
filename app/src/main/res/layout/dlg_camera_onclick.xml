@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+  <!--  <TextView
+        android:id="@+id/tvAddCameraImg"
+        android:paddingTop="50dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:drawableStart="@drawable/add_photo"
+        android:text="Camera"
+        android:drawablePadding="15dp"
+        android:textSize="18sp"
+        android:textColor="@color/notepadColor"
+        android:textStyle="bold"
+
+
+        app:drawableTint="@color/notepadColor" />
+
+    <TextView
+        android:id="@+id/tvAddGalleryImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tvAddCameraImg"
+        app:layout_constraintEnd_toEndOf="@id/tvAddCameraImg"
+        app:layout_constraintTop_toBottomOf="@id/tvAddCameraImg"
+        android:drawableStart="@drawable/gallery"
+        android:text="Gallery"
+        android:drawablePadding="17dp"
+        android:textSize="18sp"
+        android:paddingBottom="50dp"
+        android:textColor="@color/notepadColor"
+        android:textStyle="bold"
+        app:drawableTint="@color/notepadColor" />
+-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

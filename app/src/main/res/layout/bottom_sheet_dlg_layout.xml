@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dlg_background"
+    android:orientation="vertical"
+
+    android:layout_height="270dp">
+
+
+
+
+
+        <com.google.android.material.divider.MaterialDivider
+            android:background="@drawable/divider_bg"
+            android:layout_marginTop="2dp"
+            android:layout_width="40dp"
+            android:layout_height="4dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/dividerColor"
+            app:dividerColor="@color/dividerColor"
+
+            app:dividerInsetEnd="20dp"
+            app:dividerInsetStart="20dp"
+    />
+
+    <TextView
+        android:id="@+id/tvCrossAllNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:drawableStartCompat="@drawable/cross"
+        android:drawableTint="@color/black"
+        android:layout_marginTop="2dp"
+        />
+
+    <Button
+        android:id="@+id/btnFavDlg"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Add To Favourites"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/notepadColor"
+
+        />
+
+
+    <Button
+        android:id="@+id/btnDeleteDlg"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Add To RecycleBin"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/red"
+
+        />
+
+
+
+</LinearLayout>

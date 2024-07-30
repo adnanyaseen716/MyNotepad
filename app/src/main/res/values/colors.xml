@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="black2">#2B2929</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#F43636</color>
+    <color name="blue">#0E099E</color>
+    <color name="green2">#07685E</color>
+    <color name="pink">#E91E63</color>
+    <color name="pink2">#71203B</color>
+    <color name="lightpink">#EC96B8</color>
+    <color name="green">#64DD17</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="yellow2">#674C19</color>
+    <color name="babymaroon2">#6E1204</color>
+    <color name="orange">#FF5722</color>
+    <color name="purple">#9C27B0</color>
+    <color name="purple2">#650475</color>
+    <color name="lightpurple">#B388FF</color>
+    <color name="lightblue">#03A9F4</color>
+    <color name="lightgreen">#AEEA00</color>
+    <color name="darkyellow">#FF9800</color>
+    <color name="pherozi">#009688</color>
+    <color name="darkblue">#673AB7</color>
+    <color name="darpink">#880E4F</color>
+    <color name="darnavy">#512DA8</color>
+    <color name="lightmaroon">#BC5746</color>
+    <color name="maroon">#591409</color>
+    <color name="babymaroon">#8E1A08</color>
+    <color name="lightred">#ED0909</color>
+    <color name="gray">#C3C8C5</color>
+    <color name="lightorange">#FD7D54</color>
+    <color name="ddfarkgreen">#06A512</color>
+    <color name="darkgreen">#038338</color>
+    <color name="whatsappGreen">#1FCC36</color>
+    <color name="lightGreen">#4CBF5C</color>
+    <color name="etBackground">#C9D1CD</color>
+    <color name="lightone">#FF8A80</color>
+    <color name="lighttwo">#F4FF81</color>
+    <color name="lighthree">#80D8FF</color>
+    <color name="lightfour">#B388FF</color>
+    <color name="lightfive">#B2FF59</color>
+    <color name="lightsix">#536DFE</color>
+    <color name="lightseven">#FF6E40</color>
+    <color name="lightbrown2">#F3C779</color>
+    <color name="lightbrown">#FFD180</color>
+    <color name="lightbrowntwo">#E6CA97</color>
+    <color name="lightbrownthree">#F1E3CB</color>
+    <color name="lightbackcartoon">#8C99DD</color>
+    <color name="toolightgreen">#C3DCD0</color>
+    <color name="nlightsix">#82B1FF</color>
+    <color name="lightfeerozi">#C8E7F4</color>
+    <color name="lightGray">#E9EDEF</color>
+    <color name="darkGray">#616362</color>
+
+    <color name="dividerColor">#828784</color>
+
+    <color name="lavender">#8692f7</color>
+
+    <color name="notepadColor">#8692f7</color>
+    <color name="notepadColor2">#FFAB00</color>
+    <color name="notepadColor3">#40E6D7</color>
+
+
+
+</resources>

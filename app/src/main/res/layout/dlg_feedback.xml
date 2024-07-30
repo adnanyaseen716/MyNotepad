@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvFeedbackDlg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Do you like our app?"
+        android:textSize="20sp"
+        android:textColor="@color/notepadColor"
+        android:textStyle="bold"
+        android:layout_marginStart="70dp"
+        android:paddingRight="50dp"
+        android:layout_marginTop="30dp"
+
+        />
+    <TextView
+        android:id="@+id/tvNoFeedback"
+        android:layout_width="63dp"
+        android:layout_height="50dp"
+        android:text="No"
+        app:layout_constraintStart_toStartOf="@id/tvFeedbackDlg"
+        app:layout_constraintTop_toBottomOf="@id/tvFeedbackDlg"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="5dp"
+        android:textSize="20sp"
+        android:background="@color/notepadColor"
+        android:textColor="@color/white"
+        android:gravity="center"
+
+        />
+
+    <TextView
+        android:layout_width="63dp"
+        android:layout_height="48dp"
+        android:id="@+id/tvYesFeedback"
+        app:layout_constraintStart_toEndOf="@id/tvNoFeedback"
+        app:layout_constraintTop_toTopOf="@id/tvNoFeedback"
+        android:layout_marginStart="50dp"
+        android:text="Yes"
+        android:textSize="20sp"
+        android:background="@color/notepadColor"
+        android:textColor="@color/white"
+        android:gravity="center"
+        />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tvNoFeedback"
+        app:layout_constraintEnd_toEndOf="@id/tvYesFeedback"
+        app:layout_constraintTop_toBottomOf="@id/tvNoFeedback"
+        android:layout_marginTop="50dp"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

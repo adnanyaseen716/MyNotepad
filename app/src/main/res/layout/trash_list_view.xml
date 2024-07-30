@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+
+
+    <TextView
+        android:layout_width="365dp"
+        android:layout_height="90dp"
+        android:background="@drawable/notes_outline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tvTrashTitle"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="Title"
+        android:textSize="20sp"
+        android:layout_marginTop="17dp"
+        android:maxLines="1"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+
+
+
+    <TextView
+        android:id="@+id/tvTrashDescription"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:maxLines="2"
+        android:text="Description"
+        app:layout_constraintTop_toBottomOf="@id/tvTrashTitle"
+        app:layout_constraintStart_toStartOf="@id/tvTrashTitle"
+        android:layout_marginTop="3dp"
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

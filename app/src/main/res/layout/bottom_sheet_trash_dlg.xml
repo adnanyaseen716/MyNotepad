@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dlg_background"
+    android:orientation="vertical"
+
+    android:layout_height="300dp">
+
+
+
+
+    <com.google.android.material.divider.MaterialDivider
+        android:background="@drawable/divider_bg"
+        android:layout_marginTop="2dp"
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/dividerColor"
+        app:dividerColor="@color/dividerColor"
+
+        app:dividerInsetEnd="20dp"
+        app:dividerInsetStart="20dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tvCrossTrash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:drawableStartCompat="@drawable/cross"
+        android:drawableTint="@color/black"
+
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:id="@+id/tvAskDeleteTrash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do you want to permanently delete title?"
+        android:textSize="19sp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/notepadColor"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/btnRestore"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Restore"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/notepadColor"
+
+        />
+
+    <Button
+        android:id="@+id/btnDeleteTrash"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Delete  Permanently"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/red"
+
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AddNotes"
+    >
+
+
+    <TextView
+        android:id="@+id/tvBack"
+        android:layout_width="26dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="45dp"
+        android:drawableStart="@drawable/back28"
+        android:drawableTint="@color/notepadColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/tvBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/bold25"
+        android:drawableTint="@color/notepadColor"        android:textStyle="bold"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@id/tvBack"
+        app:layout_constraintTop_toTopOf="@id/tvBack"
+        app:layout_constraintBottom_toBottomOf="@id/tvBack"
+        android:textColor="@color/notepadColor"
+        android:onClick="boldText"
+        android:layout_marginStart="40dp"
+
+        />
+    <TextView
+        android:id="@+id/tvItalic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTint="@color/notepadColor"
+        android:drawableStart="@drawable/italic24"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@id/tvBold"
+        app:layout_constraintTop_toTopOf="@id/tvBold"
+        app:layout_constraintBottom_toBottomOf="@id/tvBold"
+        android:textColor="@color/notepadColor"
+        android:onClick="italicText"
+
+        android:layout_marginStart="34dp"
+
+        />
+    <TextView
+        android:id="@+id/tvUnderline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTint="@color/notepadColor"
+        android:drawableStart="@drawable/underline2"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@id/tvItalic"
+        app:layout_constraintTop_toTopOf="@id/tvItalic"
+        app:layout_constraintBottom_toBottomOf="@id/tvItalic"
+        android:textColor="@color/notepadColor"
+        android:onClick="underlineText"
+
+        android:layout_marginStart="40dp"
+        />
+    <TextView
+        android:id="@+id/tvAddImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/gallery25"
+        android:drawableTint="@color/notepadColor"
+        app:layout_constraintStart_toEndOf="@id/tvUnderline"
+        app:layout_constraintTop_toTopOf="@id/tvUnderline"
+        app:layout_constraintBottom_toBottomOf="@id/tvUnderline"
+
+        android:layout_marginStart="48dp"
+        />
+
+    <TextView
+        app:layout_constraintTop_toTopOf="@id/tvBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/tvSaveNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTint="@color/notepadColor"
+        android:drawableLeft="@drawable/tick30"
+        />
+    <TextView
+        android:id="@+id/tvTotalCharacters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:text="Total Characters : 0 "
+        app:layout_constraintStart_toStartOf="@id/tvBack"
+        app:layout_constraintTop_toBottomOf="@id/tvBack"
+        android:layout_marginTop="12dp"
+        />
+    <TextView
+        android:id="@+id/tvLastEdited"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:text="     Last Edited : "
+        app:layout_constraintStart_toEndOf="@id/tvTotalCharacters"
+        app:layout_constraintTop_toTopOf="@id/tvTotalCharacters"
+        />
+
+    <EditText
+        android:layout_marginTop="40dp"
+        android:id="@+id/etEnterTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:hint="Title"
+        android:inputType="text"
+        android:padding="10dp"
+        android:background="@drawable/notes_outline"
+        app:layout_constraintStart_toStartOf="@id/tvBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvBack"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+
+        />
+
+
+
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="360dp"
+        android:layout_height="660dp"
+        app:layout_constraintStart_toStartOf="@id/etEnterTitle"
+        app:layout_constraintEnd_toEndOf="@id/etEnterTitle"
+        app:layout_constraintTop_toBottomOf="@id/etEnterTitle"
+        android:background="@drawable/notes_outline"
+        android:layout_marginEnd="25dp"
+
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginEnd="25dp"
+
+        android:layout_marginTop="10dp"
+        android:layout_width="360dp"
+        android:layout_height="650dp"
+        app:cardElevation="0dp"
+        android:backgroundTint="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="@id/etEnterTitle"
+        app:layout_constraintTop_toBottomOf="@id/etEnterTitle"
+
+        >
+
+        <EditText
+            android:layout_marginTop="15dp"
+            android:hint="Enter Text..."
+            android:id="@+id/etEnterDescription"
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@id/etEnterTitle"
+            app:layout_constraintEnd_toEndOf="@id/etEnterTitle"
+            app:layout_constraintTop_toBottomOf="@id/etEnterTitle"
+
+
+            android:background="@color/white"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/ivImagePlace"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:layout_constraintStart_toStartOf="@id/etEnterDescription"
+            app:layout_constraintTop_toTopOf="@id/etEnterDescription"
+
+            android:layout_marginTop="250dp"
+            android:layout_marginStart="30dp"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
